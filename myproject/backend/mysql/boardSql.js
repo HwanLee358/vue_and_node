@@ -1,5 +1,6 @@
 module.exports = {
-    boardList: `select * from board order by no limit ? , 10`,
+    boardList: `select * from board order by no limit ? , ?`,
+    boardCount: 'select count(*) cnt from board',
     boardInsert: 'insert into board set ?',
     boardUpdate: `update board set ? where no = ?`,
     boardDelete: 'delete from board where no = ?',

@@ -31,6 +31,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/boardList.vue')
   },
   {
+    path: '/boardForm',
+    name: 'boardForm',
+    component: () => import(/* webpackChunkName: "about" */ '../views/boardForm.vue')
+  },
+  {
     path: '/loginForm',
     name: 'loginForm',
     component: () => import(/* webpackChunkName: "about" */ '../views/loginForm.vue')

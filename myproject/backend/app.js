@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const customerRouter = require('./routes/customer.js');
+const boardRouter = require('./routes/board.js')
 
 const loginRouter = require('./routes/login.js');
 const logoutRouter = require('./routes/logout.js');
@@ -50,6 +51,7 @@ app.use(session({
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/customer', customerRouter);
+app.use('/board', boardRouter);
 
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
