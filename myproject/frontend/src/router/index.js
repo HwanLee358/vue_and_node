@@ -9,6 +9,16 @@ const routes = [
     component: Vuetify
   },
   {
+    path: '/composition',
+    name: 'composition',
+    component: () => import(/* webpackChunkName: "about" */ '../components/CompostionDataBinding.vue')
+  },
+  {
+    path: '/compositionMouse',
+    name: 'compositionMouse',
+    component: () => import(/* webpackChunkName: "about" */ '../views/CompositionMouse.vue')
+  },
+  {
     path: '/',
     name: 'home',
     component: HomeView
