@@ -1,7 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Vuetify from '../views/VuetifyView.vue'
 
 const routes = [
+  {
+    path: '/vuetify',
+    name: 'vuetify',
+    component: Vuetify
+  },
   {
     path: '/',
     name: 'home',
